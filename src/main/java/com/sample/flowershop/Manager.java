@@ -7,7 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+<<<<<<< HEAD
 import javax.persistence.JoinColumn;
+=======
+>>>>>>> 6c0dacbb1ec2da6280f17d205b0c943d5fb028e3
 import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
 
@@ -17,7 +20,10 @@ public class Manager {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
+<<<<<<< HEAD
 	@Column(name="manager_id")
+=======
+>>>>>>> 6c0dacbb1ec2da6280f17d205b0c943d5fb028e3
 	private Long id;
 
 	@Column(length=50)
@@ -32,7 +38,10 @@ public class Manager {
 	private Date hireDate;
 	
 	@ManyToOne
+<<<<<<< HEAD
 	@JoinColumn(name="shop_id")
+=======
+>>>>>>> 6c0dacbb1ec2da6280f17d205b0c943d5fb028e3
 	private FlowerShop shop;
 
 	public Long getId() {
